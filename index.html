@@ -22,7 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    <title>chasesinghofen.github.io | Web Development</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    <title>Jon Doe | Web Development</title>
 
 
 <body class="w3-light-grey">
@@ -38,9 +38,9 @@
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container w3-animate-zoom">
-          <img src="https://media.giphy.com/media/AOSwwqVjNZlDO/giphy.gif" style="width:100%" alt="resume-image">
+          <img src="https://media.giphy.com/media/3oKIPpFhwsMNrRIjN6/giphy.gif" style="width:100%" alt="resume-image">
           <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2 class="w3-animate-left">Chase Singhofen</h2>
+            <h2 class="w3-animate-left">Jon Doe</h2>
           </div>
         </div>
 
@@ -58,9 +58,9 @@
             </p>
 
           
-          <p><i class="fab fa-linkedin fa-fw w3-margin-right w3-large w3-text-blue"></i><a class="w3-hover-text-blue" href="https://www.linkedin.com/in/chasesinghofen/" target="_blank">linkedIn</a></p>
+          <p><i class="fab fa-linkedin fa-fw w3-margin-right w3-large w3-text-blue"></i><a class="w3-hover-text-blue" href="#" target="_blank">linkedIn</a></p>
 
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i><a class="w3-hover-text-blue" href="https://chasesinghofen.github.io/chasesinghofen/" target="_blank">Portfolio</a></p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i><a class="w3-hover-text-blue" href="#" target="_blank">Portfolio</a></p>
 
           <p><i class="fas fa-globe-americas fa-fw w3-margin-right w3-large w3-text-blue"></i><a class="w3-hover-text-blue" 
           href="https://singhofen.github.io/" target="_blank">Website</a></p>
@@ -70,9 +70,8 @@
 
 
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>Florida, USA</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"><a class="w3-hover-text-blue"  href="mailto:ch83311s@yahoo.com?Subject=Hey%20there" target="_top"></i>Contact Me</a></p>
-          <!-- <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>1224435534</p> -->
-
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"><a class="w3-hover-text-blue"  href="#contact" ></i>Contact Me</a></p>
+          
           <hr>
 
           <p class="w3-large"><b><i class="fas fa-code fa-fw w3-margin-right w3-text-blue w3-spin"></i>Skills</b></p>
@@ -150,7 +149,7 @@
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Professional Experience</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="far fa-address-card fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Professional Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Full Stack Developer ~ Google Inc.</b></h5>
           <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2005 - <span class="w3-tag w3-blue w3-round">Present</span></h6>
@@ -199,36 +198,73 @@
   
   <!-- End Page Container -->
 </div>
+  <!-- Contact section with Netlify integration  -->
+    
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+  <div class="w3-content" style="max-width:600px">
+ <h4 class="w3-center"><b>Contact Form with Netlify integration</b></h4>
+    <form name="contact" netlify method="POST"  data-netlify="true" action="POST" data-netlify-recaptcha="true">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <div>
+          <label for="message">Upload File</label>
+        </div>
+          <input type="file" name="myfile" id="myfile" placeholder="Upload file" rows="10" cols="10"/><br><br><label >Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>   
+      </div>
+      
+      
+      <button type="submit reset"  value="Send Message Reset" class="w3-button w3-block w3-black w3-margin-bottom">
+          <div class="actions">
+             
+              <div class="field" data-netlify-recaptcha="true"></div>
+          </div>
+  
+        <i class="fa fa-paper-plane"></i>Send Message
+      
+      </button>
+    </form>
+  </div>
+
 
 <footer class="w3-container w3-blue-gray w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <a href="https://github.com/singhofen" target="_blank">
+  <p>Connect | Explore</p>
+  <a href="#" target="_blank">
   <i class="fab fa-github w3-hover-opacity w3-large"></i></a>
 
   <a href="https://codepen.io/csinghofen/" target="_blank">
   <i class="fab fa-codepen w3-hover-opacity w3-large"></i></a>
 
-  <a href="https://medium.com/@ch83311s" target="_blank">
+  <a href="#" target="_blank">
   <i class="fab fa-medium w3-hover-opacity w3-large"></i></a>
 
-  <a href="https://www.freecodecamp.org/singhofen" target="_blank">
+  <a href="#" target="_blank">
   <i class="fab fa-free-code-camp w3-hover-opacity w3-large"></i></a>
 
-  <a href="https://plus.google.com/" target="_blank">
+  <a href="#" target="_blank">
   <i class="fab fa-google-plus-square w3-hover-opacity w3-large"></i></a>
   
-  <a href="https://plus.google.com/" target="_blank">
-  <i class="fab fa-dev-square w3-hover-opacity w3-large"></i></a>
-  
   <a target="_blank" href="https://dev.to/singhofen">
+            <i class="fab fa-dev"></i> </a> 
+  
+  <a target="_blank" href="#">
   <i class="fab fa-dev w3-hover-opacity w3-large"></i></a>
 
-  <a href="https://www.linkedin.com/in/chasesinghofen" target="_blank">
+  <a href="#" target="_blank">
   <i class="fab fa-linkedin w3-hover-opacity w3-large"></i></a>
 <br><br>
-<button class="w3-button w3-round-xlarge"><a href="https://chasesinghofen.github.io/chasesinghofen/" target="_blank"><i class="fas fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i><i>Portfolio</i></a></button>
+<a href="#" target="_blank"><i class="fas fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i><i>Portfolio</i></a>
   
-<button class="w3-button w3-round-xlarge"><a href="https://singhofen.github.io/" target="_blank"><i class="fas fa-globe-americas fa-fw w3-margin-right w3-large w3-text-blue"></i><i>Website</i></a></button>
+ <a href="#" target="_blank"><i class="fas fa-globe-americas fa-fw w3-margin-right w3-large w3-text-blue"></i><i>Website</i></a>
+  
+  <a href="#top" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Let's go back up!</a>
 
   <p>Responsive HTML/CSS Resume for anyone to use <i class="fas fa-smile"></i></p>
   <p>&copy; 2018 MIT License Chase Singhofen</p>
